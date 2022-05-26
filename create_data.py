@@ -3,6 +3,7 @@ import json
 import string
 
 
+# build synthetic ocr data
 def ocr_dataset(text_corpus):
     pg.init()
     pg.font.init()

@@ -77,7 +77,6 @@ class ClipClassifier(torch.nn.Module):
         self.logit_scale = nn.Parameter(torch.ones([]) * np.log(1 / 0.07))
 
         self.fc = nn.Linear(clip_dim, 3)
-
         self.loss = torch.nn.CrossEntropyLoss()
 
     def forward(self, vis_feats, labels=None):

@@ -2,7 +2,6 @@ from typing import Dict, List, Optional, Tuple, Union
 import numpy as np
 from PIL import Image, ImageFile
 ImageFile.LOAD_TRUNCATED_IMAGES = True
-
 import torch
 from torchvision.transforms import Compose, Resize, CenterCrop, ToTensor, Normalize
 
