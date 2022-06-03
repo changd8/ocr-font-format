@@ -33,7 +33,7 @@ python train.py --output_dir experiments/best_clip_model2_2e-5 --save_every_epoc
 ```
 If `RN50x16` is not listed by `clip.available_models()` for some reason, we can alternatively use the downloaded pretrained CLIP model checkpoint by using the argument `--model_name ./RN50x16`.
 
-You might want to adjust --per_gpu_train_batch_size if the gpu memory does not fit with this current configuration.
+**NOTE**: You might want to adjust --per_gpu_train_batch_size if the gpu memory does not fit with this current configuration.
 
 The ClipClassifier model checkpoints and training logs will be saved in the output directory `experiments/best_clip_model2_2e-5`. 
 
