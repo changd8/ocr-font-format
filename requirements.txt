@@ -1,0 +1,17 @@
+git+https://github.com/openai/CLIP.git
+
+# data science and numerical computing
+numpy
+matplotlib
+scipy
+scikit-learn
+ftfy==5.1
+regex
+tqdm
+# pandas
+# ipython
+
+# pytorch libraries
+torch==1.11.0
+torchvision
+transformers==4.8.2
