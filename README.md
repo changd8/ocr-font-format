@@ -26,7 +26,7 @@ The training script is adapted from [huggingface transformers finetuning](https:
 However, I ended up not needing the distributed training support, because I only used 1 GPU for training these models.
 
 The model checkpoints will be stored in the `experiments` directory.
-#### Training ClipClassifier
+### Training ClipClassifier
 Begin fine-tuning CLIP on the synthetic dataset by running the following command:
 ```
 python train.py --output_dir experiments/best_clip_model2_2e-5 --save_every_epoch --overwrite_output_dir --num_train_epochs 3 --fp16 --learning_rate 2e-5 --model_name RN50x16 --resize 
@@ -35,7 +35,7 @@ If `RN50x16` is not listed by `clip.available_models()` for some reason, we can 
 
 The ClipClassifier model checkpoints and training logs will be saved in the output directory `experiments/best_clip_model2_2e-5`. 
 
-#### Training SimpleClassifier
+### Training SimpleClassifier
 Begin training SimpleClassifier by running the following command:
 ```
 python train.py --output_dir experiments/best_simple_model2_2e-5 --save_every_epoch --overwrite_output_dir --num_train_epochs 3 --fp16 --learning_rate 2e-5 --model_name RN50x16 --resize 
