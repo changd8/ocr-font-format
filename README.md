@@ -31,7 +31,7 @@ Begin fine-tuning CLIP on the synthetic dataset by running the following command
 ```
 python train.py --output_dir experiments/best_clip_model2_2e-5 --save_every_epoch --overwrite_output_dir --model-name ClipClassifier --num_train_epochs 3 --fp16 --learning_rate 2e-5 --model_name RN50x16 --resize 
 ```
-If `RN50x16` is not listed by `clip.available_models()` for some reason, we can alternatively use the downloaded pretrained CLIP model checkpoint by using the argument `--model_name ./RN50x16`.
+We are using the `RN50x16` model. If `RN50x16` is not listed by `clip.available_models()` for some reason, we can alternatively use the downloaded pretrained CLIP model checkpoint by using the argument `--model_name ./RN50x16`.
 
 **NOTE**: You might want to adjust --per_gpu_train_batch_size if the gpu memory does not fit with this current configuration.
 
