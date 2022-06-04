@@ -19,7 +19,7 @@ First download pygame [here](https://www.pygame.org/wiki/GettingStarted). Then t
 python create_data.py
 ```
 The datasets augmented with colored text and blurring are saved in `train2.py`, `val2.py`, and `test2.py`, and the generated images are saved to the `images` directory. 
-The original datasets created before these changes are saved in `train.py`, `val.py`, and `test.py`.
+The original datasets created before these changes are saved in `train.py`, `val.py`, and `test.py` (more details are explained in `font_style_classification_demo.ipynb`.
 
 ## Training the Model
 The training script is adapted from [huggingface transformers finetuning](https://github.com/huggingface/transformers/blob/27c1b656cca75efa0cc414d3bf4e6aacf24829de/examples/run_lm_finetuning.py). 
