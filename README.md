@@ -35,7 +35,7 @@ We are using the `RN50x16` CLIP model. If `RN50x16` is not listed by `clip.avail
 
 **NOTE**: You might want to adjust `--per_gpu_train_batch_size` if the gpu memory does not fit with this current configuration.
 
-The ClipClassifier model checkpoints and training logs will be saved in the output directory `experiments/best_clip_model2_2e-5`. 
+The ClipClassifier model checkpoints will be saved in the output directory `experiments/best_clip_model2_2e-5/checkpoint-best`. The validation accuracies for each epoch is saved in `metrics.json`.
 
 ### Training SimpleClassifier
 Begin training SimpleClassifier by running the following command:
