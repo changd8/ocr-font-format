@@ -35,14 +35,14 @@ We are using the `RN50x16` CLIP model. If `RN50x16` is not listed by `clip.avail
 
 **NOTE**: You might want to adjust `--per_gpu_train_batch_size` if the gpu memory does not fit with this current configuration.
 
-The ClipClassifier model checkpoints will be saved in the output directory `experiments/best_clip_model2_2e-5/checkpoint-best`. The validation accuracies for each epoch is saved in `metrics.json`.
+The ClipClassifier model best checkpoint will be saved in the output directory `experiments/best_clip_model2_2e-5/checkpoint-best`. The validation accuracies for each epoch is saved in `metrics.json`.
 
 ### Training SimpleClassifier
 Begin training SimpleClassifier by running the following command:
 ```
 python train.py --output_dir experiments/best_simple_model2_2e-5 --save_every_epoch --overwrite_output_dir --model_name SimpleClassifier --num_train_epochs 3 --fp16 --learning_rate 2e-5 --clip_model_name RN50x16 --resize 
 ```
-The SimpleClassifier model checkpoints and training logs will be saved in the output directory `experiments/best_simple_model2_2e-5`. 
+The SimpleClassifier model best checkpoint will be saved in the output directory `experiments/best_simple_model2_2e-5/checkpoint-best`. The validation accuracies for each epoch is saved in `metrics.json`.
 
 ## Demo
 After training our models, we can see their predictions on the front page of the [TextOCR paper](https://arxiv.org/pdf/2105.05486.pdf) using `font_style_classification_demo.ipynb`.
